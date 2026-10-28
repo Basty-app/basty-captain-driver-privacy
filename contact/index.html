@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Contact Basty about the Basty Captain driver app.">
+  <title>Basty Captain — Contact Us</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #121414;
+      color: #e3e2e2;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.7; }
+    a { color: #b3c5ff; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid #b3c5ff; outline-offset: 3px; }
+    header { border-bottom: 1px solid #424656; background: #1a1c1c; }
+    .wrap { width: min(100% - 32px, 860px); margin-inline: auto; }
+    header .wrap { padding-block: 24px; }
+    .brand { margin: 0; color: #b3c5ff; font-weight: 750; letter-spacing: .04em; }
+    h1 { margin: 8px 0; font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; }
+    .subtitle { margin: 0; color: #c2c6d8; }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; }
+    main { padding-block: 28px 56px; }
+    article { padding: 24px; background: #1e2020; border: 1px solid #424656; border-radius: 16px; }
+    article + article { margin-top: 24px; }
+    article[dir="rtl"] { text-align: right; }
+    article h2 { margin-top: 0; font-size: 1.6rem; }
+    .details { display: grid; gap: 16px; margin: 24px 0 0; }
+    .details div { padding: 16px; background: #292a2a; border: 1px solid #424656; border-radius: 12px; }
+    dt { color: #c2c6d8; font-size: .9rem; font-weight: 700; }
+    dd { margin: 4px 0 0; font-size: 1.1rem; overflow-wrap: anywhere; }
+    .note { margin: 24px 0 0; color: #c2c6d8; }
+    footer { padding: 0 0 32px; color: #c2c6d8; font-size: .9rem; }
+    @media (max-width: 600px) { article { padding: 18px; } }
+    @media print {
+      :root { color-scheme: light; background: white; color: black; }
+      header, article, .details div { background: white; color: black; border-color: #bbb; }
+      a, .brand, .subtitle, .note, dt, footer { color: black; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="brand">BASTY CAPTAIN</p>
+      <h1>Contact Us <span lang="ar">· تواصل معنا</span></h1>
+      <p class="subtitle">Support and privacy contact for the Basty Captain driver app</p>
+      <nav aria-label="Page navigation">
+        <a href="index.html">Privacy Policy / سياسة الخصوصية</a>
+        <a href="#english" lang="en">English</a>
+        <a href="#arabic" lang="ar">العربية</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="wrap">
+    <article id="english" lang="en" aria-labelledby="english-heading">
+      <h2 id="english-heading">English</h2>
+      <p>Contact Basty about the Basty Captain app, driver support, or privacy and data requests.</p>
+      <dl class="details">
+        <div><dt>Company</dt><dd>Basty</dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+218930417324">+218 93 041 7324</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:Basty@info.ly">Basty@info.ly</a></dd></div>
+      </dl>
+      <p class="note">For access, correction, or deletion of personal data, please email us. Do not include your password or a delivery verification code.</p>
+    </article>
+
+    <article id="arabic" lang="ar" dir="rtl" aria-labelledby="arabic-heading">
+      <h2 id="arabic-heading">العربية</h2>
+      <p>تواصل مع باستي بخصوص تطبيق «Basty Captain» أو دعم السائقين أو طلبات الخصوصية والبيانات.</p>
+      <dl class="details">
+        <div><dt>الشركة</dt><dd>باستي (Basty)</dd></div>
+        <div><dt>الهاتف</dt><dd><a href="tel:+218930417324" dir="ltr">+218 93 041 7324</a></dd></div>
+        <div><dt>البريد الإلكتروني</dt><dd><a href="mailto:Basty@info.ly" dir="ltr">Basty@info.ly</a></dd></div>
+      </dl>
+      <p class="note">لطلب الوصول إلى البيانات الشخصية أو تصحيحها أو حذفها، يُرجى مراسلتنا عبر البريد الإلكتروني. لا ترسل كلمة المرور أو رمز التحقق من التوصيل.</p>
+    </article>
+  </main>
+
+  <footer class="wrap">Basty Captain · <a href="index.html">Privacy Policy / سياسة الخصوصية</a></footer>
+</body>
+</html>
