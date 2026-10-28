@@ -1,6 +1,15 @@
-# Basty Captain privacy policy page
+# Basty Captain website pages
 
-This folder contains standalone, bilingual Privacy Policy and Contact Us webpages for the Basty Captain Android app. **`index.html` is the privacy page; `contact.html` is the contact page.** Keep the entire `privacy-policy` folder together when uploading it to GitHub.
+These files are for the public GitHub repository `Basty-app/basty-captain-driver-privacy`. In that repository, use this layout:
+
+```text
+README.md
+index.html
+contact/
+  index.html
+```
+
+`index.html` is the Privacy Policy. `contact/index.html` is the Contact Us page. The pages link to each other using relative paths.
 
 ## Check with the client before publishing
 
@@ -8,19 +17,22 @@ The client supplied **Basty** as the company name and **Basty@info.ly** as the p
 
 The app's current Terms text says “Basty Tech Co.” while this policy says “Basty.” Confirm the intended legal name and make the two documents consistent before submitting the store listing.
 
-## Publish with GitHub Pages
+## Move the Contact Us page into a folder on GitHub
 
-1. Create a **public** GitHub repository. A simple name is `basty-captain-privacy`.
-2. On the repository's **Code** page, choose **Add file → Upload files**. Drag the whole `privacy-policy` folder from your computer into the upload area, then commit the upload. On GitHub, confirm that the files appear as `privacy-policy/index.html`, `privacy-policy/contact.html`, and `privacy-policy/README.md`.
-3. In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**. Select **main** and **/(root)**, then save.
-4. Wait for GitHub Pages to deploy. With the folder kept in the repository, use these page links (replace `YOUR-USERNAME` and the repository name with the real values):
-   - Privacy Policy: `https://YOUR-USERNAME.github.io/basty-captain-privacy/privacy-policy/`
-   - Contact Us: `https://YOUR-USERNAME.github.io/basty-captain-privacy/privacy-policy/contact.html`
-5. Check that both links open without a GitHub login, on a phone and a computer. Use the **Privacy Policy link including `/privacy-policy/`** in the Play Console **Privacy policy** field. The same policy should also be reachable from inside the app before release.
+1. Upload the local `contact/index.html` file to the GitHub repository, preserving the `contact` folder. In GitHub's web editor, you can also create a file named `contact/index.html` and paste the contents of the local file.
+2. Replace the repository's root `index.html` with the updated local `index.html` so its Contact Us links point to `contact/`.
+3. Delete the old root `contact.html` after the new page is live.
+4. Keep GitHub Pages set to **Deploy from a branch → main → /(root)**.
+
+The public URLs are:
+
+- Privacy Policy: `https://basty-app.github.io/basty-captain-driver-privacy/`
+- Contact Us: `https://basty-app.github.io/basty-captain-driver-privacy/contact/`
+
+Open both URLs after deployment and test the links between them. Use the Privacy Policy URL in the Play Console **Privacy policy** field.
 
 The page is plain HTML and CSS. It has no build step, external fonts, scripts, cookies, or analytics code.
 
 ## Keep it current
 
 Review this policy when the app adds new data collection, integrations, or permission use. Keep the Play Console Data safety form consistent with the published policy and the app's actual behavior.
-
